@@ -6,35 +6,26 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox layoutX="1.0" prefHeight="400.0" prefWidth="600.0">
-         <children>
-            <MenuBar>
-              <menus>
-                <Menu fx:id="file" mnemonicParsing="false" text="Arquivo">
-                  <items>
-                    <MenuItem fx:id="close" mnemonicParsing="false" text="Close" />
-                        <MenuItem fx:id="web" mnemonicParsing="false" onAction="#ViraWeb" text="Abrir Web" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
-            </MenuBar>
-            <Button fx:id="btnweb" mnemonicParsing="false" onAction="#Web" prefHeight="51.0" prefWidth="97.0" text="Downloader" textAlignment="CENTER" />
-            <PasswordField fx:id="senha" prefHeight="3.0" prefWidth="571.0" />
-         </children>
-      </VBox>
+      <Button fx:id="btnweb" layoutX="252.0" layoutY="124.0" mnemonicParsing="false" onAction="#Web" prefHeight="51.0" prefWidth="97.0" text="Downloader" textAlignment="CENTER" />
+      <MenuBar fx:id="barra" layoutY="1.0" prefHeight="27.0" prefWidth="600.0">
+        <menus>
+          <Menu fx:id="file" mnemonicParsing="false" text="Arquivo">
+            <items>
+              <MenuItem fx:id="close" mnemonicParsing="false" text="Fechar" />
+                  <MenuItem fx:id="web" mnemonicParsing="false" onAction="#ViraWeb" text="Abrir Web" />
+            </items>
+          </Menu>
+            <Menu fx:id="help" mnemonicParsing="false" text="Ajuda">
+              <items>
+                <MenuItem fx:id="ajuda" mnemonicParsing="false" text="Ajuda" />
+                  <MenuItem mnemonicParsing="false" text="Ajuda Online" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <PasswordField fx:id="senha" layoutX="82.0" layoutY="77.0" prefHeight="24.0" prefWidth="437.0" />
    </children>
 </AnchorPane>

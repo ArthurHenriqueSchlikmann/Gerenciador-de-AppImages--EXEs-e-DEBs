@@ -12,9 +12,12 @@ public class PrimaryController {
 
     @FXML
     private MenuItem Web;
+    private MenuItem ajuda;
+    private MenuItem ajudaOnline;
     private MenuItem close;
     private MenuBar barra;
     private Menu file;
+    private Menu help;
     private Button btnweb;
     private PasswordField senha;
     
