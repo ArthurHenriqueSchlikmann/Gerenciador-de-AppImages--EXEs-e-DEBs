@@ -10,11 +10,12 @@ public class PrimaryController {
 
     @FXML
     private MenuItem Web;
+    private MenuItem close;
     private MenuBar barra;
     private Menu file;
     
     @FXML
     private void ViraWeb() throws IOException {
-        
+        App.setRoot("web");
     }
 }
