@@ -28,6 +28,9 @@ public class PrimaryController {
     
     @FXML
     private void Web() throws IOException {
-        App.setRoot("web");
+        String senhaVerificacao = senha.getText();
+        if("1852012".equals(senhaVerificacao)) {
+            App.setRoot("web");
+        }
     }
 }
