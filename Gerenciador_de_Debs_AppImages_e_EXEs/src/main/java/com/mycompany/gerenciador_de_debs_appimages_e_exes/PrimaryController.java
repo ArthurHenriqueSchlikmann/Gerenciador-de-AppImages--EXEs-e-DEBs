@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.Menu;
+import javafx.scene.control.Button;
 
 public class PrimaryController {
 
@@ -13,9 +14,15 @@ public class PrimaryController {
     private MenuItem close;
     private MenuBar barra;
     private Menu file;
+    private Button btnweb;
     
     @FXML
     private void ViraWeb() throws IOException {
+        App.setRoot("web");
+    }
+    
+    @FXML
+    private void Web() throws IOException {
         App.setRoot("web");
     }
 }
