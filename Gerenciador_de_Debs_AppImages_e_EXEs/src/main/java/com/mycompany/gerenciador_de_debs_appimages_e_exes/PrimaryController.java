@@ -6,6 +6,7 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.Menu;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 
 public class PrimaryController {
 
@@ -15,10 +16,14 @@ public class PrimaryController {
     private MenuBar barra;
     private Menu file;
     private Button btnweb;
+    private PasswordField senha;
     
     @FXML
     private void ViraWeb() throws IOException {
-        App.setRoot("web");
+        String senhaVerificacao = senha.getText();
+        if("1852012".equals(senhaVerificacao)) {
+            App.setRoot("web");
+        }
     }
     
     @FXML
