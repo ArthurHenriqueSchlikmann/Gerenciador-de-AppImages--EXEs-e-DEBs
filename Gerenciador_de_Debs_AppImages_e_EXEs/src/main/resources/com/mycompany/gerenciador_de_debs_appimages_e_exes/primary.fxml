@@ -5,6 +5,8 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
@@ -27,5 +29,10 @@
         </menus>
       </MenuBar>
       <PasswordField fx:id="senha" layoutX="82.0" layoutY="77.0" prefHeight="24.0" prefWidth="437.0" />
+      <ImageView fitHeight="75.0" fitWidth="141.0" layoutX="268.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagens/554-5542906_linux-penguin-png-linux-penguin-tux-transparent-png.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
